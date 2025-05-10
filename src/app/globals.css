@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* 
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Hide scrollbar */
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Hides scrollbar track */
+.topic-list::-webkit-scrollbar-track,
+.topic-list::-webkit-scrollbar-track {
+  background: transparent;
+  /* Hides scrollbar track */
+}
+
+.topic-list::-webkit-scrollbar,
+.challenge-list::-webkit-scrollbar {
+  width: 0;
+  /* Hides scrollbar */
+  height: 0;
+}
+
+/* Custom Scrollbar Styles for Vertical Scrollbar */
+.challenge-listy::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust width if needed */
+}
+
+.challenge-listy::-webkit-scrollbar-thumb {
+  background-color: #B5C9A5;
+  border-radius: 10px;
+}
+
+.challenge-listy::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.outline-blue {
+  outline: 2px solid blue;
+  /* You can change the color and thickness of the outline */
+}
+
+/* Optional: Hides scrollbar thumb */
+.topic-list::-webkit-scrollbar-thumb,
+.challenge-list::-webkit-scrollbar-thumb {
+  background: transparent;
+  /* Hides scrollbar thumb */
+}
+
+.MoodTabs ul li:active {}
+
+.MoodTabs .react-tabs__tab:active {
+  /* width: 87px; */
+  padding: 6px 40px !important;
+  border: 1.455px solid #000 !important;
+  /* border-bottom:1px solid #aaa !important;  */
+
+}
+
+.MoodTabs .react-tabs__tab--selected {
+  padding: 6px 40px !important;
+  border: 1.455px solid #000 !important;
+  border-radius: 14.545px;
+
+}
+
+
+
+.MoodTabs .react-tabs__tab {
+  background-color: #B5C9A5;
+  padding: 6px 40px !important;
+  border-radius: 14.545px;
+  color: #fff;
+
+}
+
+.MoodTabs ul li:focus {
+  position: unset !important;
+
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(200, 211, 212, 0.568);
+	border-radius: 10px;
+	background-color: #ececeb;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #e9bfa4;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(240, 223, 223, 0.377);
+	background-color: #e9bfa4;
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.outingTabs ul li:active {}
+
+.outingTabs .react-tabs__tab:active {
+  /* width: 87px; */
+  padding: 6px 40px !important;
+  border: 1.455px solid #000 !important;
+  /* border-bottom:1px solid #aaa !important;  */
+
+}
+
+.outingTabs .react-tabs__tab--selected {
+  padding: 6px 40px !important;
+  border: 1.455px solid #000 !important;
+  border-radius: 14.545px;
+  background-color: black;
+  color: #fff;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+
+
+}
+
+
+
+.outingTabs .react-tabs__tab {
+  background-color: #B5C9A5;
+  padding: 6px 40px !important;
+  border-radius: 14.545px;
+  color: #fff;
+
+}
+
+.outingTabs ul li:focus {
+  position: unset !important;
+
+}
+
+
+
+
+
+
+.ratingOverviewTabs ul li:active {}
+
+.ratingOverviewTabs .react-tabs__tab:active {
+  /* width: 87px; */
+  padding: 6px 40px !important;
+  border: 1.455px solid #000 !important;
+  /* border-bottom:1px solid #aaa !important;  */
+
+}
+
+.ratingOverviewTabs .react-tabs__tab--selected {
+  padding: 6px 40px !important;
+  border-bottom: 4px solid #000;
+  color: #000;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  background-color: #F5F5F5 !important;
+
+
+}
+
+
+
+.ratingOverviewTabs .react-tabs__tab {
+  background-color: #B5C9A5;
+  padding: 6px 40px !important;
+  border-radius: 14.545px;
+  color: #fff;
+
+}
+
+.ratingOverviewTabs ul li:focus {
+  position: unset !important;
+
+}
+
+
+
+
+
+
+.tab {
+  width: 100px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  color: #939292;
+}
+
+.tab.active {
+  border-bottom: 4px solid #007042 !important;
+  color: #007042;
+}
+
+.slider-overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-overflow {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* styles.css */
+
+/* Responsive design */
+@media (min-width: 1200px) {
+
+  /* lg */
+  .question-item {
+    width: calc(33.33% - 2rem);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* md */
+  .question-item {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* sm */
+  .question-item {
+    width: 100%;
+  }
+}
+
+
+
+/* 
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background: transparent !important;
+} */
+input[type="radio"]:checked+span {
+  background-color: orange;
+}
+
+
+
+.loaderScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  background-color: rgba(255, 255, 255, 0.758);
+
+}
+
+.custom-toast-container {
+  border-radius: 10px;
+  /* Adjust the border radius as needed */
+}
+
+
+/* Custom styles for the autocomplete dropdown with a specific parent class */
+.custom-autocomplete .pac-container {
+  width: 100% !important;
+  /* Make the dropdown full-width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+
+.custom-autocomplete .pac-item {
+  font-size: 14px;
+  /* Adjust font size if needed */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Force scrollbar visibility for elements with the show-scrollbar class */
+.show-scrollbar {
+  overflow-x: scroll !important;
+}
+
+.show-scrollbar::-webkit-scrollbar {
+  display: block !important;
+  height: 8px !important;
+}
+
+.show-scrollbar {
+  -ms-overflow-style: auto !important;
+  scrollbar-width: auto !important;
+
+}
+
+.show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #D79569;
+  /* Custom scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.show-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  /* Transparent scrollbar track */
+  /* Custom scrollbar track color */
+}

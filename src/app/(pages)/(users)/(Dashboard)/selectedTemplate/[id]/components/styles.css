@@ -1,0 +1,10 @@
+ 
+
+  .custom-scrollbar-container {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;   
+  }
+  
+  .custom-scrollbar-container::-webkit-scrollbar {
+    display: none;  
+  }
